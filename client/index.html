@@ -23,12 +23,10 @@
             <h2>Zoltars Fortune</h2>
 
 <form>
-
         <input id="user-input" type="input" placeholder="ask - zoltar">
         <input id="button" type="reset" value="submit"  onclick="response()" onmousedown="audio.play();">
         <p id="response"></p>
 </div>
-
 </form>
 </body>
     <script>
@@ -37,14 +35,14 @@
                 'You will be a failure',
                 'Love of your life is already dead',
                 'Youll go to Mars, and suffer',
-                'Nothing Special...',
+                'youre nothing Special...',
                 'You will always be last place',
                 'youll always be alone',
                 'youll never succeed in web dev, then suffer',
                 'youre adopted - you suffer',
                 'your parents dont love you'
             ];
-            var number = Math.floor(Math.random()*10);
+            var number = Math.floor(Math.random()*9);
             document.getElementById("response").innerHTML = list[number];
             
         }

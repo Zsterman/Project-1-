@@ -7,42 +7,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fortune Teller</title>
+
+    <div id= 'top'></div>
 </head>
-<body>
+
+
+<body class = 'fade-in-image'>
+
+  
+
     <embed class ='player' src="horrormusic.mp3" loop="true" hidden='true' autostart="true" height="150" width="150">
     <div id= "box">
         <img src="https://i.postimg.cc/Yqtw014s/Zoltar.jpg">
-        <h2>Zoltars Fortune</h2>
+       
+            <h2>Zoltars Fortune</h2>
+
+<form>
+
         <input id="user-input" type="input" placeholder="ask - zoltar">
-        <input id="button" type="button" value="submit" onclick="response()" onmousedown="audio.play();">
+        <input id="button" type="reset" value="submit"  onclick="response()" onmousedown="audio.play();">
         <p id="response"></p>
-    </div>
+</div>
+
+</form>
+</body>
     <script>
         function response(){
             var list = [
                 'You will be a failure',
                 'Love of your life is already dead',
-                'Youll go to Mars, and die',
+                'Youll go to Mars, and suffer',
                 'Nothing Special...',
                 'You will always be last place',
                 'youll always be alone',
-                'youll never succeed in web dev, and then die',
-                'youre adopted',
+                'youll never succeed in web dev, then suffer',
+                'youre adopted - you suffer',
                 'your parents dont love you'
             ];
-            var number = Math.floor(Math.random()*5);
+            var number = Math.floor(Math.random()*10);
             document.getElementById("response").innerHTML = list[number];
-        };
+            
+        }
     </script>
     <script type="text/javascript">
     const audio = new Audio();
     audio.src = 'magicbell.wav';
     </script>
+  
 </body>
+
 <script src="main.js"></script>
 <script src="/js"></script>
-<footer>
 
-
-</footer>
 </html>

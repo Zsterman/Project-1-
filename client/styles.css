@@ -85,8 +85,10 @@ input[type=button] {
 
 .player{
     opacity: 15%;
-    position: relative;
+    position:relative;
     margin-top: 50%;
+    
+
     
 }
 
